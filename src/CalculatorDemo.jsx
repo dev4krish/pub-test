@@ -47,10 +47,8 @@ class CalculatorDemo extends React.Component{
                     }else{
                         this.setState({currentInput:this.state.currentInput==''?'':(Math.round(eval(this.state.currentInput)*roundOff)/roundOff)+'',dotAllowed:false});
                     }
-                    //this.setState({currentInput:this.state.currentInput==''?'':(Math.round(eval(this.state.currentInput)*100)/100)+'',dotAllowed:false});
                 }                 
                 break;
-
             case '.':
                 lastChar=this.state.currentInput.slice(-1);
                 if(this.state.dotAllowed || !this.state.currentInput.includes('.')){
@@ -59,7 +57,6 @@ class CalculatorDemo extends React.Component{
                     this.setState({dotAllowed:false})
                 }
                 break;
-
             case 'c':
                 this.setState({currentInput: '',dotAllowed:true});
                 break;
@@ -84,5 +81,4 @@ class CalculatorDemo extends React.Component{
         );
     }
 }
-
 export default CalculatorDemo;
