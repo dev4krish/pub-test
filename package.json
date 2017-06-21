@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "pub-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Calculator app",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot -p",
@@ -13,8 +13,8 @@
     "type": "git",
     "url": "https://github.com/dev4krish/pub-test.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Kuldeep",
+  "license": "MIT",
   "dependencies": {
     "babel": "^6.23.0",
     "classnames": "^2.2.5",
