@@ -1,0 +1,16 @@
+{
+	"rootDir": "src",
+	"bail": false,
+	"verbose":true,
+	"collectCoverage": true,
+	"coverageDirectory": "../build/coverage",
+	"transform": {
+		".*.css": "../node_modules/jest-css-modules",
+		".*.js": "../node_modules/babel-jest"
+	},
+	 
+	"moduleFileExtensions": [
+      "js",
+      "jsx"
+    ]
+}

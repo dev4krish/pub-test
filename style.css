@@ -1,0 +1,16 @@
+
+.button {
+  width: 33%;
+  
+}
+.inputBox{
+    width: 100%;
+}
+.outer{
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+.innerDiv{
+    padding: 2px;
+}

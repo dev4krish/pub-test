@@ -1,0 +1,65 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot -p",
+    "jest": "jest ",
+    "test": "npm run jest ",
+    "release": "toolkit-pub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev4krish/pub-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "classnames": "^2.2.5",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node": "^6.10.3",
+    "postcss-loader": "^2.0.5",
+    "precss": "^1.4.0",
+    "toolkit-pub": "^1.0.0"
+  },
+  "jest": {
+    "rootDir": "src",
+    "transform": {
+      ".*.css": "../node_modules/jest-css-modules",
+      ".*.js": "../node_modules/babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ],
+    "transformIgnorePatterns": [
+      "../node_modules/"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-jest": "^19.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.28.0",
+    "jest": "^19.0.2",
+    "postcss": "^5.2.17",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-styleguidist": "^5.1.1",
+    "react-test-renderer": "^15.5.4",
+    "webpack": "^2.4.1",
+    "webpack-dashboard": "^0.3.0",
+    "webpack-dev-server": "^2.4.4"
+  }
+}
